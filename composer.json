@@ -1,0 +1,47 @@
+{
+	"name": "nielslange/smntcs-pinterest-save-button",
+	"type": "plugin",
+	"description": "Adds a Pinterest Save Button to your images that becomes visible when a visitor hovers the image.",
+	"keywords": [
+		"WordPress",
+		"Plugin",
+		"SMNTCS Pinterest Save Button"
+	],
+	"homepage": "https://github.com/nielslange/smntcs-pinterest-save-button",
+	"support": {
+		"issues": "https://github.com/nielslange/smntcs-pinterest-save-button/issues",
+		"source": "https://github.com/nielslange/smntcs-pinterest-save-button"
+	},
+	"license": "GPL-3.0-or-later",
+	"authors": [
+		{
+			"name": "Contributors",
+			"homepage": "https://github.com/nielslange/smntcs-pinterest-save-button/graphs/contributors"
+		}
+	],
+	"require": {
+		"php": ">=5.6"
+	},
+	"require-dev": {
+		"dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
+		"wptrt/wpthemereview": "^0.2.1",
+		"humanmade/psalm-plugin-wordpress": "^2.2",
+		"overtrue/phplint": "^3.4",
+		"phpcompatibility/phpcompatibility-all": "^1.1",
+		"squizlabs/php_codesniffer": "^3.8",
+		"vimeo/psalm": "^4.30",
+		"wp-coding-standards/wpcs": "^2.3",
+		"php-parallel-lint/php-parallel-lint": "^1.1"
+	},
+	"scripts": {
+		"phpcbf": "phpcbf --standard=phpcs.xml .",
+		"phpcs": "phpcs --standard=phpcs.xml .",
+		"phplint": "phplint",
+		"psalm": "psalm --no-cache"
+	},
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
+	}
+}
